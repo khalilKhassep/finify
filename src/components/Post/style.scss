@@ -1,0 +1,65 @@
+@use '../style/variables.scss' as variable;
+@use '../style/mixin.scss' as *;
+@use '../style/responsive' as *;
+
+.post-list {
+    .post {
+        .content {
+            text-align: center;
+
+            h3 {
+                color: variable.$fontPrime;
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+                color: variable.$grayFont;
+                line-height: 2;
+
+
+                @include media-breakpoint-up('xxl') {
+                    //   font-size: 0.9em;
+                }
+            }
+        }
+
+        .post-image {
+            .img {
+                max-width: 100%;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+            }
+
+            @include media-breakpoint-down('sm') {
+                box-sizing: border-box;
+                padding: 2em;
+            }
+        }
+    }
+
+    .button {
+
+        text-align: center;
+        margin-top: 3em;
+
+        a.btn {
+            text-decoration: none;
+            @include button('prime', variable.$secondary-color)
+        }
+    }
+
+    .title {
+        text-align: center;
+        margin: 2em 0;
+
+        @include media-breakpoint-down('sm') {
+            font-size: 1.6em;
+            margin: 1em 0;
+        }
+    }
+
+}
+
+@import './media.scss';

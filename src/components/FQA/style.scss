@@ -1,0 +1,54 @@
+@use '../style/variables.scss' as vr;
+@use '../style/responsive.scss' as * ;
+.question {
+    position: relative;
+    border:1px solid #E1E1E1;
+    border-radius: 28px;
+    padding: 0.9em 1.5em;
+    box-shadow: 0px 10px 24px 0px rgba(210, 210, 210, 0.25);
+    margin-bottom: 1em;
+    transition:  all 0.2ms ease-in-out;
+     @include media-breakpoint-up('xxl'){
+        padding: 1.5em;
+     }
+    span{  
+        display: inline-block;
+        font-size: 0.9em;
+        @include media-breakpoint-up('xxl'){
+            font-size: 1.4em;
+        }
+     }
+    p{
+        color: vr.$grayFont;
+        font-size: 0.7em;
+        line-height: 189%;
+        margin: 2em 0 0 0;
+        @include media-breakpoint-up('xxl'){
+            font-size: 1em;
+        }
+    }
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button{
+           background: none;
+           border: none;
+           cursor: pointer;
+
+        }
+    }
+
+   
+}
+@include media-breakpoint-down('md') {
+    .img-wrapper{
+        margin-bottom: 2.5em;
+    }
+
+    section , .pb{
+        padding-bottom: 2em;
+    }
+}

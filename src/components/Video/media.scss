@@ -1,0 +1,81 @@
+@use '../style/responsive.scss' as *;
+
+@include media-breakpoint-down('sm') {
+    .outerwrapper {
+        padding-top: 1.2em;
+
+        .title {
+            margin-bottom: 1.6em;
+        }
+
+        .boxv {
+
+            height: 210px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+            &:before {
+                height: 50px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            .csc {
+                width: 50px;
+                transform: translateY(1em);
+
+                >img {}
+            }
+
+            .line {
+                left: 2px;
+                top: -45px;
+                width: 35px;
+            }
+
+            .v {
+                .play {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-between('sm', 'md') {
+    .outerwrapper {
+        padding-top: 2em;
+
+        .title {
+            margin-bottom: 2em;
+        }
+
+        .boxv {
+            height: 60vh;
+
+
+            &:before {
+                height: 65px;
+            }
+
+            .csc {
+                width: 65px;
+                transform: translateY(1.2em);
+
+                >img {}
+            }
+
+            .line {
+                width: 50px;
+                top: -30px;
+                left: -25px;
+            }
+
+            .v {
+                .play {
+                    width: 60px;
+                }
+            }
+        }
+    }
+}

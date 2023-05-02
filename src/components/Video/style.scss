@@ -1,0 +1,105 @@
+@use '../style/variables.scss' as varaiable;
+@use '../style/responsive.scss' as *;
+
+.outerwrapper {
+    background-color: varaiable.$secondary-color;
+    padding: 5em 0 0 0;
+
+    .title {
+        text-align: center;
+        color: #fff;
+        margin: 0 0 3em 0;
+    }
+
+    .boxv {
+        height: 80vh;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+        position: relative;
+        background-color: white;
+
+        // @include media-breakpoint-down('sm') {
+           
+        // }
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+        }
+
+        &:before {
+            left: 0;
+            top: 0;
+            height: 100px;
+            width: 100%;
+            background-color: #F4F4F4;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+
+            // @include media-breakpoint-down('sm') {
+            //     // height: 50px;
+            //     // border-top-left-radius: 15px;
+            //     // border-top-right-radius: 15px;
+            // }
+
+
+        }
+
+
+    }
+
+    .csc {
+        text-align: left;
+        transform: translateY(1.9em);
+        padding-left: 20px;
+        box-sizing: border-box;
+
+        >img {
+            margin: unset;
+
+        }
+
+        // @include media-breakpoint-down('sm') {
+        //     width: 50px;
+        //     transform: translateY(1em);
+        // }
+    }
+
+    .line {
+        position: absolute;
+        left: -70px;
+        top: -70px;
+
+        // @include media-breakpoint-down('sm') {
+        //     left: 2px;
+        //     top: -45px;
+        //     width: 35px;
+        // }
+    }
+
+    .v {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .play {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            box-sizing: border-box;
+
+            &:active {
+                transform: translateY(3px);
+            }
+
+            // @include media-breakpoint-down('sm') {
+            //     width: 50px;
+            // }
+        }
+    }
+}
+
+@import './media.scss';

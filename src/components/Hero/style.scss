@@ -1,0 +1,67 @@
+@use '../style/variables.scss' as varaiable ;
+@use '../style/responsive' as * ;
+.hero{
+    height: 100%;
+    .content-text{
+        .title{
+            font-size: 3.5em;
+            margin: 0 0 50px 0;
+            font-weight: bold;
+            
+        }
+        .content{
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin: 0 0 40px 0;
+        }  
+
+        @include media-breakpoint-down('sm') {
+           text-align: center;
+           padding-top: 4em;
+           .title{
+               font-size: 1.5em;
+           }
+           .content{ font-size: 1em;}
+        }
+
+        @include media-breakpoint-up('lg'){
+            .title{
+                font-size: 2.5em;
+            }
+          
+        }
+        @include media-breakpoint-up('xl'){
+            .title{
+                font-size: 2.5em;
+            }
+
+           
+        }
+        @include media-breakpoint-up('xxl'){
+            .title{
+                font-size: 3.5em;
+            }
+        }
+    }
+    .btn{
+        background-color: varaiable.$secondary-color;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 50px; 
+        will-change: box-shadow, transform; 
+        cursor: pointer;
+        // text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+      
+    
+   .window-box{
+    .object{
+        
+    }
+   }
+}
+@import './media.scss';

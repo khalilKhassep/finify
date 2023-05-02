@@ -1,0 +1,36 @@
+@use '../../style/responsive.scss' as *; 
+
+@include media-breakpoint-down('md'){
+    .mobail-nav-icon{
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        >img{
+            margin: initial;
+        }
+    }
+}
+
+@include media-breakpoint-up('md'){
+    .nav {
+        .menu{
+            .menu-item{
+                > a{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up("lg"){
+    .nav {
+        .menu{
+            .menu-item{
+                > a{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

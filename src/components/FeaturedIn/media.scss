@@ -1,0 +1,49 @@
+@use '../style/responsive.scss' as *;
+
+
+@include media-breakpoint-only('xs') {
+    .box {
+        margin-bottom: 2em;
+        height: 100px;
+        padding: 1.5em;
+    }
+}
+
+@include media-breakpoint-down('sm') {
+    .box {
+        margin-bottom: 2em;
+        height: 100px;
+        //padding: 1.5em;
+    }
+}
+
+@include media-breakpoint-down('md') {
+    // font-size: 1.6em;
+    .box{
+        margin-bottom: 1em;
+    }
+    .pt,.pb{
+        padding-top: 2em;
+        padding-bottom: 0em;
+    }
+    .section .title{
+        font-size: 1.6em;
+    }
+}
+
+@include media-breakpoint-up('xl'){
+    .featured-in{
+        padding-bottom: 5em
+    }
+}
+
+
+@include media-breakpoint-between('md' , 'lg'){
+    .featured-in > div > div div:nth-child(2) {
+        margin-bottom: 1em;
+    }
+
+    .box{
+        padding: 15px;
+    }
+}

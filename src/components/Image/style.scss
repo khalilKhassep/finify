@@ -1,0 +1,18 @@
+@use '../style/responsive.scss' as *;
+
+.img-box{
+    box-sizing: border-box;
+    overflow: hidden;
+     > img{
+        @include media-breakpoint-down('md') {
+            max-width: initial;
+            width: 160% !important ;
+            transform: translateX(-7em);
+        }
+
+        // @include media-breakpoint-between('sm' , 'md'){
+
+        // }
+     }
+    
+}

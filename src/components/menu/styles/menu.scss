@@ -1,0 +1,97 @@
+@use '../../style//variables.scss' as variable;
+@use '../../style/mixin.scss' as *;
+.logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav {
+    .menu { 
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        align-content: center;
+
+        .menu-item {
+            &:not(:last-child) { 
+                margin-right: 50px;
+                @media (max-width: 576px) {
+                    margin-right: 15px;
+                }
+            }
+
+            >a {
+                text-decoration: none;
+                color: variable.$primary-color;
+                font-weight: variable.$font-weight;
+                font-size: 1em;
+
+                &.btn {
+                    @include button('prime' , variable.$secondary-color)
+
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 111111;
+
+    // right: -100%;
+    .close {
+        >.btn {
+            background: none;
+            border: none;
+
+            &:active {
+                transform: translateY(2px);
+            }
+        }
+    }
+}
+
+.mobail-nav {
+    text-align: center;
+    padding: 15px;
+    margin-top: 35%;
+
+
+    ul {
+        list-style: none;
+        font-size: 32px;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 35px;
+
+            >a {
+                display: block;
+                color: variable.$primary-color;
+
+                &:not(.btn) {
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 10px;
+                }
+
+                &.btn {
+                   @include button('prime' , variable.$secondary-color)
+                }
+            }
+
+        }
+    }
+}
+
+@import './media.scss';
+
+// responisve breackpoint failds
+// move to generalize and code optmization 
+

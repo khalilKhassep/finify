@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useRef } from "react";
+// import { Container } from "react-grid-system";
+import './components/style/responsive.scss';
+import "./App.css";
+import Menu from "./components/menu/Menu";
+import Hero from "./components/Hero";
+import FeaturedIn from "./components/FeaturedIn";
+import Post from "./components/Post";
+import Image from './components/Image'
+import Video from "./components/Video";
+import FQA from "./components/FQA";
+import Footer from "./components/Footer";
 function App() {
+  const _h = useRef(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header ref={_h}>
+        <Menu></Menu>
       </header>
-    </div>
+
+      <div className="outer-container">
+        <Hero refNode={_h} />
+      </div>
+      <section className="section featured-in pt">
+        <FeaturedIn />
+      </section>
+      <section  className="posts section">
+        <Post />
+      </section>
+      
+      <section className="section  pt">
+          <Image />
+      </section>
+
+      <section className="section pb video-sectoin">
+          <Video />
+      </section>
+
+      <section className="section pb">
+        <FQA />
+      </section>
+
+      <Footer />
+    </>
   );
 }
 

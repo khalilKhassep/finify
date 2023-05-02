@@ -1,0 +1,33 @@
+@use '../style/responsive.scss' as *;
+
+@include media-breakpoint-down('md') {
+    .footer {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        ul {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-right: 0 !important;
+                margin-bottom: 0.9em;
+
+                &:not(:last-child) {
+                    margin-right: unset;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down('lg'){
+    .footer {
+        ul{
+            li{
+                font-size: 0.7em;
+            }
+        }
+    }
+}

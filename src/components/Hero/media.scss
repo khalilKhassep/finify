@@ -1,0 +1,92 @@
+@use '../style/responsive.scss' as *;
+
+.hero {
+    @include media-breakpoint-between('sm' , 'md') {
+        height: 100% !important;
+        padding-bottom: 2em;
+        padding-top: 20vh;
+        .content-text {
+            text-align: center;
+            margin-bottom: 2em;
+
+            .title {
+               // color: green;
+                font-size: 1.8em !important;
+            }
+
+        }
+
+    }
+
+    @include media-breakpoint-up('md') {
+        .content-text {
+            .title {
+                // color: gold;
+                font-size: 1.3em;
+                
+            }
+            .content{
+                font-size: 0.7em;
+            }
+
+            .title,.content{
+                margin-bottom: 15px;
+            }
+
+            .btn{ 
+                font-size: 0.8em;
+                padding: 10px 25px;
+            }
+        }
+    }
+
+    @include media-breakpoint-up('lg') {
+        .content-text .title {
+            font-size: 2em;
+        }
+
+        .content-text .content {
+            font-size: 1em;
+        }
+
+        .content-text .btn{
+            font-size: 1em;
+            padding: 0.8em 1.2em;
+        }
+    }
+
+    @include media-breakpoint-up('xl') {
+        .content-text .title {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        
+         & + p{
+           font-size: 1.5em;
+           margin-bottom: 0.8em;
+           & + a.btn {
+             font-size: 1.2em; 
+             padding: 0.7em 2em; 
+           }
+         }
+        }
+
+        
+    }
+
+    @include media-breakpoint-up('xxl') {
+        .content-text .title {
+            font-size: 3em;
+        }
+    }
+
+    @include media-breakpoint-down('sm') {
+        height: 100% !important;
+        .content-text {
+            margin-bottom: 1.5em;
+            .title {
+           
+            }
+        }
+    }
+
+}
