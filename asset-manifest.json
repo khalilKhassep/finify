@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/khalilKhassep/finify.git/static/css/main.00199cc5.css",
+    "main.js": "/khalilKhassep/finify.git/static/js/main.74c2a643.js",
+    "static/media/us.svg": "/khalilKhassep/finify.git/static/media/us.8bb5c3f2d6b64093ab06d36e42ac4765.svg",
+    "static/media/nbc.svg": "/khalilKhassep/finify.git/static/media/nbc.fe0efde0b33199d2941ddce4026fe351.svg",
+    "static/media/avatar.svg": "/khalilKhassep/finify.git/static/media/avatar.a87886acd7a6fd41ef63c4111cb35083.svg",
+    "static/media/logo.svg": "/khalilKhassep/finify.git/static/media/logo.2371a24fa51820ea40462994a73417f9.svg",
+    "static/media/window.svg": "/khalilKhassep/finify.git/static/media/window.c216a301389d81f5dc4f3f1647eb7f12.svg",
+    "static/media/ad.svg": "/khalilKhassep/finify.git/static/media/ad.86e61558788d1eb647eba9eacff1a5c3.svg",
+    "static/media/yahoo.svg": "/khalilKhassep/finify.git/static/media/yahoo.62af1ec999ec47c15973dff0a5d17792.svg",
+    "static/media/fox.svg": "/khalilKhassep/finify.git/static/media/fox.aa4224061b709d4b5a56c51418d3a40a.svg",
+    "static/media/bluew.svg": "/khalilKhassep/finify.git/static/media/bluew.62ce15021d8fa4ef94d9df7ee70183ff.svg",
+    "static/media/orangew.svg": "/khalilKhassep/finify.git/static/media/orangew.73c5177ca9eb428978a9979db91a9d09.svg",
+    "static/media/green.svg": "/khalilKhassep/finify.git/static/media/green.3946c94b75f99baa6dac1c14a2be9681.svg",
+    "index.html": "/khalilKhassep/finify.git/index.html",
+    "static/media/play.svg": "/khalilKhassep/finify.git/static/media/play.b73439319b9e782de2f4c0224df7be8c.svg",
+    "static/media/lines.svg": "/khalilKhassep/finify.git/static/media/lines.b240982c51c0b24520a06f3eee3c7002.svg",
+    "static/media/menulines.svg": "/khalilKhassep/finify.git/static/media/menulines.8470c5ede54c0a99ae7d2abdb5d2affd.svg",
+    "static/media/close.svg": "/khalilKhassep/finify.git/static/media/close.3d5ccb3c06264dd8a878a5a42f52d09e.svg",
+    "static/media/crcs.svg": "/khalilKhassep/finify.git/static/media/crcs.cfddd0fad1e33bdd1ccf7c9d397dc9e7.svg",
+    "main.00199cc5.css.map": "/khalilKhassep/finify.git/static/css/main.00199cc5.css.map",
+    "main.74c2a643.js.map": "/khalilKhassep/finify.git/static/js/main.74c2a643.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00199cc5.css",
+    "static/js/main.74c2a643.js"
+  ]
+}
