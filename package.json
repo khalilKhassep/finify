@@ -5,7 +5,7 @@
     "node": "6.11.1"
   },
   "private": false,
-  "homepage":"https://khalilKhassep.github.io/finify.git",
+  "homepage":"https://khalilKhassep.github.io/finify",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
